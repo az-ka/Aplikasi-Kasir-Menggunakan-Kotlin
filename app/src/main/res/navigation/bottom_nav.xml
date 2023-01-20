@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/produkFragment">
+
+    <fragment
+        android:id="@+id/produkFragment"
+        android:name="com.aplikasi.tokosi03.ProdukFragment"
+        android:label="fragment_produk"
+        tools:layout="@layout/fragment_produk" />
+    <fragment
+        android:id="@+id/transaksiFragment"
+        android:name="com.aplikasi.tokosi03.TransaksiFragment"
+        android:label="fragment_transaksi"
+        tools:layout="@layout/fragment_transaksi" />
+    <fragment
+        android:id="@+id/laporanFragment"
+        android:name="com.aplikasi.tokosi03.LaporanFragment"
+        android:label="fragment_laporan"
+        tools:layout="@layout/fragment_laporan" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.aplikasi.tokosi03.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.aplikasi.tokosi03.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/produkFromFragment"
+        android:name="com.aplikasi.tokosi03.ProdukFromFragment"
+        android:label="fragment_produk_from"
+        tools:layout="@layout/fragment_produk_from" />
+    <fragment
+        android:id="@+id/produkFromEditFragment"
+        android:name="com.aplikasi.tokosi03.ProdukFromEditFragment"
+        android:label="fragment_produk_from_edit"
+        tools:layout="@layout/fragment_produk_from_edit" >
+        <argument
+            android:name="argsProduk"
+            app:argType="com.aplikasi.tokosi03.response.produk.Produk"
+            app:nullable="true" />
+        <argument
+            android:name="argsTambah"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bayarFragment"
+        android:name="com.aplikasi.tokosi03.BayarFragment"
+        android:label="fragment_bayar"
+        tools:layout="@layout/fragment_bayar" >
+        <argument
+            android:name="argsCart"
+            app:argType="com.aplikasi.tokosi03.response.cart.Cart" />
+        <argument
+            android:name="argsTotal"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/supplierFragment"
+        android:name="com.aplikasi.tokosi03.SupplierFragment"
+        android:label="fragment_supplier"
+        tools:layout="@layout/fragment_supplier" />
+    <fragment
+        android:id="@+id/supplierFromFragment"
+        android:name="com.aplikasi.tokosi03.SupplierFromFragment"
+        android:label="fragment_supplier_from"
+        tools:layout="@layout/fragment_supplier_from" >
+        <argument
+            android:name="argsNamaSup"
+            app:argType="string" />
+    </fragment>
+</navigation>
