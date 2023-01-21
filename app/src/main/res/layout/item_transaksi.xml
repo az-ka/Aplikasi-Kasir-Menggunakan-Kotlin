@@ -43,9 +43,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="#0084FF"
+        android:contentDescription="Minus"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:contentDescription="Minus"
         app:layout_constraintEnd_toStartOf="@+id/btnPlus"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_remove_24" />
@@ -55,9 +56,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
+        android:backgroundTint="#0084FF"
+        android:contentDescription="Plus"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:contentDescription="Plus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_add_24" />
